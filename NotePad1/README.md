@@ -1,5 +1,5 @@
 # NotePad
-## 实现时间戳和搜索功能的NotePad<br>
+<p align="center">## 实现时间戳和搜索功能的NotePad</p><br>
 <!-- ![Image text](https://github.com/Cappuccino-Luo/NotePad/blob/master/NotePad1/pictures/1.png)<br> -->
 <div align="center"><img src="https://github.com/Cappuccino-Luo/NotePad/blob/master/NotePad1/pictures/1.png"></div>
 <p align="center">进入NotePad时的界面</p>
