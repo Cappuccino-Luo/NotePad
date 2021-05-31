@@ -12,7 +12,19 @@ NoteList使用SimpleCursorAdapter来装配数据，首先查询数据库的内�
                 null,                             // No where clause, therefore no where column values.
                 NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
             );
+然后通过SimpleCursorAdapter来进行装配
+SimpleCursorAdapter adapter
+            = new SimpleCursorAdapter(
+                      this,                             // The Context for the ListView
+                      R.layout.noteslist_item,          // Points to the XML for a list item
+                      cursor,                           // The cursor to get items from
+                      dataColumns,
+                      viewIDs
+              );
+页面跳转：<br>
+不管是可选菜单、上下文菜单中的操作，还是单击列表中的笔记条目，其相应的页面跳转都是通过Intent的Action+URI进行的。<br>
 
+<div align="center">效果截图</div>
 <div align="center"><img src="https://github.com/Cappuccino-Luo/NotePad/blob/master/NotePad1/pictures/1.png"></div>
 <p align="center">进入NotePad时的界面</p>
 <div align="center"><img src="https://github.com/Cappuccino-Luo/NotePad/blob/master/NotePad1/pictures/2.png"></div>
